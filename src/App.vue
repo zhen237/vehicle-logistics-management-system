@@ -1,18 +1,23 @@
 <template>
   <div>
-    <h1>hello</h1>
-    <a-button type="primary">登录</a-button>
+    <a-config-provider :theme="theme" :locale="locale">
+      <router-view />
+    </a-config-provider>
+
+    <UpCircleOutlined />
   </div>
 </template>
 
-<script>
-export default {
-  setup() {
+<script setup>
+import { UpCircleOutlined } from '@ant-design/icons-vue'
+import zhCN from 'ant-design-vue/es/locale/zh_CN';
 
-
-    return {}
+const theme = {
+  token: {
+    colorPrimary: '#00b96b', // 明显的绿色，便于验证颜色是否生效
   }
 }
+
 </script>
 
 <style lang="scss" scoped></style>
