@@ -4,84 +4,150 @@
       <div class="logo" />
       <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline" @click="handleMenuClick">
         <a-menu-item key="dashboard">
-          <dashboard-outlined />
+          <DashboardOutlined />
           <span>工作台</span>
         </a-menu-item>
 
         <a-sub-menu key="data-management">
           <template #title>
             <span>
-              <database-outlined />
+              <DatabaseOutlined />
               <span>数据管理</span>
             </span>
           </template>
-          <a-menu-item key="data-overview">数据概览</a-menu-item>
-          <a-menu-item key="data-analysis">数据分析</a-menu-item>
-          <a-menu-item key="data-report">数据报表</a-menu-item>
+          <a-menu-item key="data-overview">
+            <LineChartOutlined />
+            数据概览
+          </a-menu-item>
+          <a-menu-item key="data-analysis">
+            <LineChartOutlined />
+            数据分析
+          </a-menu-item>
+          <a-menu-item key="data-report">
+            <FileTextOutlined />
+            数据报表
+          </a-menu-item>
         </a-sub-menu>
 
         <a-sub-menu key="business-management">
           <template #title>
             <span>
-              <shop-outlined />
+              <ShopOutlined />
               <span>业务管理</span>
             </span>
           </template>
-          <a-menu-item key="orders">订单管理</a-menu-item>
-          <a-menu-item key="routes">路线管理</a-menu-item>
-          <a-menu-item key="customers">客户管理</a-menu-item>
-          <a-menu-item key="contracts">合同管理</a-menu-item>
+          <a-menu-item key="orders">
+            <ShoppingCartOutlined />
+            订单管理
+          </a-menu-item>
+          <a-menu-item key="routes">
+            <EnvironmentOutlined />
+            路线管理
+          </a-menu-item>
+          <a-menu-item key="customers">
+            <UserOutlined />
+            客户管理
+          </a-menu-item>
+          <a-menu-item key="contracts">
+            <FileProtectOutlined />
+            合同管理
+          </a-menu-item>
         </a-sub-menu>
 
         <a-sub-menu key="vehicle-management">
           <template #title>
             <span>
-              <car-outlined />
+              <CarOutlined />
               <span>车辆管理</span>
             </span>
           </template>
-          <a-menu-item key="vehicles">车辆档案</a-menu-item>
-          <a-menu-item key="vehicle-maintenance">维修保养</a-menu-item>
-          <a-menu-item key="vehicle-insurance">保险管理</a-menu-item>
-          <a-menu-item key="vehicle-fuel">油耗管理</a-menu-item>
+          <a-menu-item key="vehicles">
+            <CarOutlined />
+            车辆档案
+          </a-menu-item>
+          <a-menu-item key="vehicle-maintenance">
+            <ToolOutlined />
+            维修保养
+          </a-menu-item>
+          <a-menu-item key="vehicle-insurance">
+            <SafetyOutlined />
+            保险管理
+          </a-menu-item>
+          <a-menu-item key="vehicle-fuel">
+            <DashboardOutlined />
+            油耗管理
+          </a-menu-item>
         </a-sub-menu>
 
         <a-sub-menu key="dispatch-management">
           <template #title>
             <span>
-              <deployment-unit-outlined />
+              <DeploymentUnitOutlined />
               <span>调度管理</span>
             </span>
           </template>
-          <a-menu-item key="dispatch-plan">调度计划</a-menu-item>
-          <a-menu-item key="dispatch-monitor">实时监控</a-menu-item>
-          <a-menu-item key="dispatch-history">调度历史</a-menu-item>
+          <a-menu-item key="dispatch-plan">
+            <CalendarOutlined />
+            调度计划
+          </a-menu-item>
+          <a-menu-item key="dispatch-monitor">
+            <MonitorOutlined />
+            实时监控
+          </a-menu-item>
+          <a-menu-item key="dispatch-history">
+            <HistoryOutlined />
+            调度历史
+          </a-menu-item>
         </a-sub-menu>
 
         <a-sub-menu key="staff-management">
           <template #title>
             <span>
-              <team-outlined />
+              <TeamOutlined />
               <span>员工管理</span>
             </span>
           </template>
-          <a-menu-item key="drivers">司机管理</a-menu-item>
-          <a-menu-item key="staff">员工档案</a-menu-item>
-          <a-menu-item key="attendance">考勤管理</a-menu-item>
-          <a-menu-item key="salary">薪资管理</a-menu-item>
+          <a-menu-item key="drivers">
+            <CarOutlined />
+            司机管理
+          </a-menu-item>
+          <a-menu-item key="staff">
+            <IdcardOutlined />
+            员工档案
+          </a-menu-item>
+          <a-menu-item key="attendance">
+            <ClockCircleOutlined />
+            考勤管理
+          </a-menu-item>
+          <a-menu-item key="salary">
+            <DollarOutlined />
+            薪资管理
+          </a-menu-item>
         </a-sub-menu>
 
         <a-sub-menu key="system-management">
           <template #title>
             <span>
-              <setting-outlined />
+              <SettingOutlined />
               <span>系统管理</span>
             </span>
           </template>
-          <a-menu-item key="profile">个人资料</a-menu-item>
-          <a-menu-item key="settings">系统设置</a-menu-item>
-          <a-menu-item key="roles">角色管理</a-menu-item>
-          <a-menu-item key="permissions">权限管理</a-menu-item>
+          <a-menu-item key="profile">
+            <UserOutlined />
+            个人资料
+          </a-menu-item>
+          <a-menu-item key="settings">
+            <SettingOutlined />
+            系统设置
+          </a-menu-item>
+          <a-menu-item key="roles">
+            <KeyOutlined />
+            角色管理
+          </a-menu-item>
+          <a-menu-item key="permissions">
+            <LockOutlined />
+            权限管理
+          </a-menu-item>
         </a-sub-menu>
       </a-menu>
     </a-layout-sider>
@@ -118,7 +184,23 @@ import {
   CarOutlined,
   DeploymentUnitOutlined,
   TeamOutlined,
-  SettingOutlined
+  SettingOutlined,
+  LineChartOutlined,
+  FileTextOutlined,
+  ShoppingCartOutlined,
+  EnvironmentOutlined,
+  UserOutlined,
+  FileProtectOutlined,
+  ToolOutlined,
+  SafetyOutlined,
+  CalendarOutlined,
+  MonitorOutlined,
+  HistoryOutlined,
+  IdcardOutlined,
+  ClockCircleOutlined,
+  DollarOutlined,
+  KeyOutlined,
+  LockOutlined
 } from '@ant-design/icons-vue';
 import { ref, computed, watch } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
