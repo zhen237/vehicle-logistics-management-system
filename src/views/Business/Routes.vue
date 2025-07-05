@@ -1,4 +1,4 @@
-<template>
+ <template>
   <div class="routes-management">
     <!-- 页面标题 -->
     <div class="page-header">
@@ -478,6 +478,17 @@ const getDifficultyColor = (difficulty) => {
     '困难': 'red'
   }
   return colorMap[difficulty] || 'default'
+}
+
+// 获取交通状况颜色
+const getTrafficColor = (traffic) => {
+  const colorMap = {
+    '畅通': 'green',
+    '中等': 'blue',
+    '繁忙': 'orange',
+    '拥堵': 'red'
+  }
+  return colorMap[traffic] || 'default'
 }
 
 // 获取交通状况百分比
