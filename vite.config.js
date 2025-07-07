@@ -14,7 +14,7 @@ export default defineConfig(({ command, mode }) => {
 
   return {
     // GitHub Pages 部署配置
-    base: mode === 'production' ? '/vehicle-logistics-management-system/' : '/',
+    base: './',
     plugins: [
       vue(),
       vueJsx(),
