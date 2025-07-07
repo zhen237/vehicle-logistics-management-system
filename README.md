@@ -4,7 +4,7 @@
 
 ## 🌐 在线演示
 
-- **演示地址**: [https://your-username.github.io/vehicle-logistics-system/](https://your-username.github.io/vehicle-logistics-system/)
+- **演示地址**: [https://zhen237.github.io/vehicle-logistics-management-system/](https://zhen237.github.io/vehicle-logistics-management-system/)
 - **登录账号**: admin / 123456
 - **功能特色**: 完整的物流管理功能，支持API故障自动降级
 
@@ -79,7 +79,7 @@ npm run preview
 
 3. **访问网站**
    ```
-   https://your-username.github.io/your-repo-name/
+   https://zhen237.github.io/vehicle-logistics-management-system/
    ```
 
 ### 其他部署方案
