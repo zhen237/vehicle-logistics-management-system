@@ -13,6 +13,8 @@ export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
 
   return {
+    // GitHub Pages 部署配置
+    base: mode === 'production' ? '/vehicle-logistics-management-system/' : '/',
     plugins: [
       vue(),
       vueJsx(),

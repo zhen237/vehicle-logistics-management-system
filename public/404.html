@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>车辆物流管理系统</title>
+  <script>
+    // GitHub Pages 单页应用重定向解决方案
+    // 将所有路由重定向到 index.html
+    var pathSegmentsToKeep = 1;
+    var l = window.location;
+    l.replace(
+      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + 
+      '/?/' + l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
+  </script>
+</head>
+<body>
+  <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+    <h2>🚛 车辆物流管理系统</h2>
+    <p>正在重定向到主页...</p>
+    <p>如果页面没有自动跳转，请<a href="/">点击这里</a></p>
+  </div>
+</body>
+</html>
