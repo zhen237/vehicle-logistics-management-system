@@ -97,7 +97,7 @@
             :value-style="{ color: '#722ed1' }"
           >
             <template #prefix>
-              <RoadOutlined />
+              <EnvironmentOutlined />
             </template>
           </a-statistic>
         </a-card>
@@ -331,7 +331,6 @@ import {
   DownloadOutlined,
   PlusOutlined,
   CheckCircleOutlined,
-  RoadOutlined,
   CarOutlined,
   ThunderboltOutlined,
   DownOutlined

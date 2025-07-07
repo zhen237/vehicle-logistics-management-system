@@ -1,16 +1,30 @@
-# Vue3 管理系统
+# 🚛 车辆物流管理系统
 
-基于 Vue3 + Ant Design Vue + Vite 的现代化管理系统模板，支持多环境配置、动态标题、加载进度条等功能。
+基于 Vue3 + Ant Design Vue + Vite 构建的现代化车辆物流管理系统，提供完整的物流业务管理功能，支持智能容错、多环境配置等企业级特性。
 
-## ✨ 特性
+## 🌐 在线演示
 
-- 🚀 **Vue3 + Vite** - 快速的开发体验
+- **演示地址**: [https://your-username.github.io/vehicle-logistics-system/](https://your-username.github.io/vehicle-logistics-system/)
+- **登录账号**: admin / 123456
+- **功能特色**: 完整的物流管理功能，支持API故障自动降级
+
+## ✨ 核心功能
+
+### 🏢 业务模块
+- 📊 **工作台** - 实时数据统计、业务趋势分析、系统通知
+- 📦 **业务管理** - 订单管理、路线规划、合同管理、财务结算
+- 🚛 **车辆管理** - 车辆档案、维修记录、油耗统计、GPS追踪
+- 📅 **调度管理** - 任务调度、实时监控、运输统计、异常处理
+- 👥 **员工管理** - 人员档案、绩效考核、薪资管理、培训记录
+
+### 🛠️ 技术特性
+- 🚀 **Vue3 + Vite** - 现代化开发体验
 - 🎨 **Ant Design Vue** - 企业级UI组件库
-- 🌍 **多环境配置** - 支持开发、测试、生产环境
-- 📱 **响应式布局** - 适配不同屏幕尺寸
-- 🔄 **加载进度条** - NProgress集成
-- 📝 **动态标题** - 路由切换自动更新页面标题
-- 🛠️ **开发工具** - ESLint + Prettier + Vue DevTools
+- 📊 **ECharts集成** - 丰富的数据可视化
+- 🔄 **智能容错** - API故障自动降级到Mock数据
+- 🌍 **多环境配置** - 开发、测试、生产环境支持
+- 📱 **响应式设计** - 完美适配移动端
+- � **权限管理** - 基于角色的访问控制
 
 ## 🚀 快速开始
 
@@ -45,6 +59,36 @@ npm run build:dev
 # 预览构建结果
 npm run preview
 ```
+
+## 🌐 部署指南
+
+### GitHub Pages 部署（推荐）
+
+1. **上传代码到 GitHub**
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+2. **启用 GitHub Pages**
+   - 进入仓库 Settings → Pages
+   - Source 选择 "Deploy from a branch"
+   - Branch 选择 "main"，Folder 选择 "/ (root)"
+   - 保存设置
+
+3. **访问网站**
+   ```
+   https://your-username.github.io/your-repo-name/
+   ```
+
+### 其他部署方案
+
+- **Vercel**: 连接 GitHub 仓库，自动部署
+- **Netlify**: 拖拽 `dist-production` 文件夹部署
+- **自建服务器**: 上传 `dist-production` 到 Web 服务器
+
+详细部署指南请参考：[部署到GitHub Pages指南.md](./部署到GitHub Pages指南.md)
 
 ## 🔧 环境变量配置
 

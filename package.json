@@ -1,8 +1,17 @@
 {
-  "name": "vue-project-antdv",
-  "version": "0.0.0",
-  "private": true,
+  "name": "vehicle-logistics-management-system",
+  "version": "1.0.0",
+  "description": "基于 Vue3 + Ant Design Vue 的车辆物流管理系统前端项目",
+  "private": false,
   "type": "module",
+  "keywords": ["vue3", "ant-design-vue", "logistics", "management-system", "frontend"],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/vehicle-logistics-management-system.git"
+  },
+  "homepage": "https://github.com/your-username/vehicle-logistics-management-system#readme",
   "scripts": {
     "dev": "vite --mode development",
     "dev:staging": "vite --mode staging",
